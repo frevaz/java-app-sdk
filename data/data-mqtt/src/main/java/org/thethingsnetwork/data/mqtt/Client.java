@@ -223,7 +223,8 @@ public class Client extends AbstractClient {
                         }
                         break;
                     case "events":
-                        if (tokens.length > 5) {
+                       // if (tokens.length > 5) {
+                       if (tokens.length >= 5) {
                             switch (tokens[4]) {
                                 case "activations":
                                     if (handlers.containsKey(ActivationHandler.class)) {
